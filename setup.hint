@@ -1,0 +1,4 @@
+category: Interpreters Gnome
+requires: cygwin lua51 glib2 gtk2-x11 pango
+sdesc: "Lua bindings for GTK2"
+ldesc: "Lua bindings for GTK2"

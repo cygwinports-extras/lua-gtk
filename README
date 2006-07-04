@@ -1,0 +1,62 @@
+lua51-gtk2
+------------------------------------------
+Lua bindings for GTK2.
+
+Runtime requirements:
+  cygwin-1.5.20-1
+  glib2-2.10.3-1
+  gtk2-x11-2.8.19-1
+  lua51-5.1.1-1
+  pango-1.12.3-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.20-1
+  binutils-20050610-1
+  cygport-0.2.2-1
+  gcc-core-3.4.4-1
+  gcc-java-3.4.4-1
+  make-3.80-1
+
+Canonical website:
+  http://luaforge.net/projects/lua-gtk/
+
+-------------------------------------------
+
+Build instructions:
+  unpack lua51-gtk2-0.4-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./lua51-gtk2-0.4-X.cygport all
+
+This will create:
+  /usr/src/lua51-gtk2-0.4-X-src.tar.bz2
+  /usr/src/lua51-gtk2-0.4-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/lib/lua/5.1/gtk2.dll
+  /usr/share/doc/Cygwin/lua51-gtk2-0.4.README
+  /usr/share/doc/lua51-gtk2-0.4/AUTHORS
+  /usr/share/doc/lua51-gtk2-0.4/COPYING
+  /usr/share/doc/lua51-gtk2-0.4/ChangeLog
+  /usr/share/doc/lua51-gtk2-0.4/INSTALL
+  /usr/share/doc/lua51-gtk2-0.4/NEWS
+  /usr/share/doc/lua51-gtk2-0.4/README
+  /usr/share/doc/lua51-gtk2-0.4/README.hash
+  /usr/share/doc/lua51-gtk2-0.4/README.win32.txt
+  /usr/share/doc/lua51-gtk2-0.4/TODO
+
+------------------
+
+Port Notes:
+
+----- version 0.4-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
