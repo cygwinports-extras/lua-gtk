@@ -1,58 +1,75 @@
-lua51-gtk2
+lua-gtk
 ------------------------------------------
-Lua bindings for GTK2.
+Lua-Gtk provides a complete binding to Gtk 2.x for Lua. With it, you can 
+write small or large applications only in Lua, while using Gtk through 
+an API that almost matches the C API. All of the over 5500 functions and 
+700 structures, unions and enums are available. Still, the library is 
+just about 200 kB when compiled (plus a few small Lua files).
 
 Runtime requirements:
-  cygwin-1.5.20-1
-  glib2-2.10.3-1
-  gtk2-x11-2.8.19-1
-  lua51-5.1.1-1
-  pango-1.12.3-1
+  cygwin-1.5.25-7
+  lua-5.1.3-1
+  lua-socket-2.0.2-1
+  glib2
+  gtk2-x11
+  pango
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.20-1
-  binutils-20050610-1
-  cygport-0.2.2-1
+  cygwin-1.5.25-7
+  binutils-20060817-1
+  cygport-0.3.8-1
   gcc-core-3.4.4-1
   gcc-java-3.4.4-1
-  make-3.80-1
+  make-3.81-1
 
 Canonical website:
+  http://lua-gtk.luaforge.net/
+
+Canonical download:
   http://luaforge.net/projects/lua-gtk/
 
 -------------------------------------------
 
 Build instructions:
-  unpack lua51-gtk2-0.4-X-src.tar.bz2
+  unpack lua-gtk-0.7-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./lua51-gtk2-0.4-X.cygport all
+  cygport ./lua-gtk-0.7-X.cygport all
 
 This will create:
-  /usr/src/lua51-gtk2-0.4-X-src.tar.bz2
-  /usr/src/lua51-gtk2-0.4-X.tar.bz2
+  /usr/src/lua-gtk-0.7-X-src.tar.bz2
+  /usr/src/lua-gtk-0.7-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary package:
 
-  /usr/lib/lua/5.1/gtk2.dll
-  /usr/share/doc/Cygwin/lua51-gtk2-0.4.README
-  /usr/share/doc/lua51-gtk2-0.4/AUTHORS
-  /usr/share/doc/lua51-gtk2-0.4/COPYING
-  /usr/share/doc/lua51-gtk2-0.4/ChangeLog
-  /usr/share/doc/lua51-gtk2-0.4/INSTALL
-  /usr/share/doc/lua51-gtk2-0.4/NEWS
-  /usr/share/doc/lua51-gtk2-0.4/README
-  /usr/share/doc/lua51-gtk2-0.4/README.hash
-  /usr/share/doc/lua51-gtk2-0.4/README.win32.txt
-  /usr/share/doc/lua51-gtk2-0.4/TODO
+  /usr/lib/lua/5.1/gtk.dll
+  /usr/share/doc/lua-gtk-0.7/AUTHORS
+  /usr/share/doc/lua-gtk-0.7/COPYING
+  /usr/share/doc/lua-gtk-0.7/ChangeLog
+  /usr/share/doc/lua-gtk-0.7/INSTALL
+  /usr/share/doc/lua-gtk-0.7/NEWS
+  /usr/share/doc/lua-gtk-0.7/README
+  /usr/share/doc/lua-gtk-0.7/README.binary
+  /usr/share/doc/lua-gtk-0.7/README.hash
+  /usr/share/doc/lua-gtk-0.7/README.win32.txt
+  /usr/share/doc/lua-gtk-0.7/TODO
+  /usr/share/lua/5.1/gtk/ftp_co.lua
+  /usr/share/lua/5.1/gtk/glade.lua
+  /usr/share/lua/5.1/gtk/http_co.lua
+  /usr/share/lua/5.1/gtk/socket_co.lua
+  /usr/share/lua/5.1/gtk/strict.lua
+  /usr/share/lua/5.1/gtk/watches.lua
 
 ------------------
 
 Port Notes:
+
+----- version 0.7-1 -----
+Version bump.
 
 ----- version 0.4-1 -----
 Initial release for Cygwin.

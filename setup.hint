@@ -1,4 +1,9 @@
-category: Interpreters Gnome
-requires: cygwin lua51 glib2 gtk2-x11 pango
-sdesc: "Lua bindings for GTK2"
-ldesc: "Lua bindings for GTK2"
+category: Gnome Lua
+requires: cygwin lua lua-socket glib2 gtk2-x11 pango
+sdesc: "Lua GTK2 bindings"
+ldesc: "Lua-Gtk provides a complete binding to Gtk 2.x for Lua. With it, 
+you can write small or large applications only in Lua, while using Gtk 
+through an API that almost matches the C API. All of the over 5500 
+functions and 700 structures, unions and enums are available. Still, the 
+library is just about 200 kB when compiled (plus a few small Lua 
+files)."

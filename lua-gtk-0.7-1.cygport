@@ -1,0 +1,24 @@
+relnum=3030
+
+DESCRIPTION="Lua GTK2 bindings"
+HOMEPAGE="http://luaforge.net/projects/lua-gtk/"
+SRC_URI="
+	http://luaforge.net/frs/download.php/${relnum}/${P}.tar.gz
+	http://luaforge.net/frs/download.php/3040/types.xml-2.12.1-linux.gz
+"
+DIFF_EXCLUDES="make.state tests.log"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	mkdir -p build/cygwin
+	ln -sf ${S}/../types.xml* build/cygwin/types.xml
+	./make.sh cygwin || error "make cygwin failed"
+}
+
+src_install() {
+	cd ${B}
+	./make.sh cygwin install DESTDIR=${D} || error "make install failed"
+
+	dodoc doc/[A-Z]*
+}
