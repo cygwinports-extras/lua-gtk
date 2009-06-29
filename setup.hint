@@ -1,5 +1,5 @@
 category: Gnome Lua
-requires: cygwin lua lua-socket glib2 gtk2-x11 pango
+requires: lua lua-socket glib2 gtk2-x11 pango
 sdesc: "Lua GTK2 bindings"
 ldesc: "Lua-Gtk provides a complete binding to Gtk 2.x for Lua. With it, 
 you can write small or large applications only in Lua, while using Gtk 
